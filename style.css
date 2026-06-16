@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #07111f;
+    color: white;
+}
+
+.custom-nav {
+    background-color: #080d27;
+    padding: 10px 0;
+    border-radius: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #c9d17d !important;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+.nav-link:hover {
+    color: #6ecbff !important;
+    text-decoration: underline;
+    
+}
+
+
+.home-hero {
+    min-height: 720px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.home-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.home-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("mlbb-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    animation: zoomBg 4s ease-in-out infinite alternate;
+    z-index: 0;
+}
+
+.home-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(2,6,23,0.45);
+    z-index: 1;
+}
+   
+
+@keyframes zoomBg {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+
+
+.home-hero h1 {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.15;
+}
+
+.hero-text {
+    color: #dbeafe;
+    font-size: 18px;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.hero-stats div {
+    background: rgba(255,255,255,0.08);
+    padding: 15px 28px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+.hero-stats h3 {
+    color: #6ecbff;
+    margin: 0;
+    font-weight: bold;
+}
+
+.hero-stats p {
+    margin: 0;
+    color: #cbd5e1;
+}
+
+.main-btn {
+    display: inline-block;
+    background-color: #6ecbff;
+    color: #020617;
+    padding: 14px 34px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 28px;
+}
+
+.main-btn:hover {
+    background-color: white;
+}
+
+.feature-card {
+    background-color: rgba(255,255,255,0.09);
+    padding: 35px;
+    border-radius: 22px;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 0 35px rgba(110,203,255,0.2);
+    text-align: left;
+}
+
+.feature-card h3 {
+    color: #6ecbff;
+}
+
+.feature-card h2 {
+    font-size: 38px;
+}
+
+.feature-card span {
+    color: #facc15;
+    font-weight: bold;
+}
+
+.video-section {
+    text-align: center;
+    padding: 85px 20px;
+    background-color: #312e81;
+    margin-top: -50px;
+    padding-top: 100px;
+   
+}
+
+.video-section h2 {
+    color: #70cafe;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.video-section p {
+    max-width: 800px;
+    margin: 20px auto 30px;
+    color: #cbd5e1;
+    line-height: 1.9;
+}
+
+.video-box iframe {
+    width: 760px;
+    height: 430px;
+    max-width: 100%;
+    border-radius: 18px;
+    border: none;
+    box-shadow: 0 0 35px rgb(20, 148, 222);
+}
+
+.learn-section {
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.learn-section h2 {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.learn-card {
+    background-color: #0f172a;
+    padding: 35px;
+    border-radius: 18px;
+    height: 100%;
+    transition: 0.5s;
+    border: 1px solid rgb(42, 102, 128);
+    box-shadow: 0 0 12px rgb(20, 148, 222) ;
+}
+
+.learn-card:hover {
+    transform: translateY(-15px);
+    background-color: #235c71;
+}
+
+.learn-card h3 {
+    color: #6ecbff;
+}
+
+.learn-card p {
+    color: #cbd5e1;
+}
+
+.learn-card a {
+    color: #facc15;
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.quote-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(90deg, #6ecbff, #38bdf8);
+    color: #020617;
+}
+
+.quote-section h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #020617;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
